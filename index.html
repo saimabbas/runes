@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="runes">
+      <img class="bg-img" src="assets/background.gif" alt="" />
+      <div class="stones-container">
+        <div class="stone-box stone-1-box">
+          <img class="stone" src="assets/stones-cropped/1.gif" alt="" />
+          <img
+            class="stone-highlighted"
+            src="assets/stones-cropped/1s.gif"
+            alt=""
+          />
+          <img class="text text-1" src="assets/text/1.png" alt="" />
+        </div>
+        <div class="stone-box stone-2-box">
+          <img class="stone" src="assets/stones-cropped/2.gif" alt="" />
+          <img
+            class="stone-highlighted"
+            src="assets/stones-cropped/2s.gif"
+            alt=""
+          />
+          <img class="text text-2" src="assets/text/2.png" alt="" />
+        </div>
+        <div class="stone-box stone-3-box">
+          <img class="stone" src="assets/stones-cropped/3.gif" alt="" />
+          <img
+            class="stone-highlighted"
+            src="assets/stones-cropped/3s.gif"
+            alt=""
+          />
+          <img class="text text-3" src="assets/text/3.png" alt="" />
+        </div>
+        <div class="stone-box stone-4-box">
+          <img class="stone" src="assets/stones-cropped/4.gif" alt="" />
+          <img
+            class="stone-highlighted"
+            src="assets/stones-cropped/4s.gif"
+            alt=""
+          />
+          <img class="text text-4" src="assets/text/4.png" alt="" />
+        </div>
+        <div class="stone-box stone-5-box">
+          <img class="stone" src="assets/stones-cropped/5.gif" alt="" />
+          <img
+            class="stone-highlighted"
+            src="assets/stones-cropped/5s.gif"
+            alt=""
+          />
+          <img class="text text-5" src="assets/text/5.png" alt="" />
+        </div>
+        <div class="stone-box stone-6-box">
+          <img class="stone" src="assets/stones-cropped/6.gif" alt="" />
+          <img
+            class="stone-highlighted"
+            src="assets/stones-cropped/6s.gif"
+            alt=""
+          />
+          <img class="text text-6" src="assets/text/6.png" alt="" />
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      let landingAnimation = gsap.timeline();
+      landingAnimation.fromTo(
+        ".stone",
+        {
+          opacity: 0,
+          scale: 0,
+        },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 0.5,
+          ease: Power1.inOut,
+          delay: 0.5,
+          stagger: {
+            from: "random",
+            each: 0.15,
+          },
+        }
+      );
+    </script>
+  </body>
+</html>

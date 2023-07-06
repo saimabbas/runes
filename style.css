@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.runes {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  filter: brightness(0.85);
+}
+.stones-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 5rem;
+  height: max-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.stone-box {
+  width: max-content;
+  height: 6.5rem;
+  position: relative;
+  background-color: red;
+}
+.stone,
+.stone-highlighted {
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.15s;
+}
+.text {
+  width: 200px;
+  height: max-content;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 110%);
+  opacity: 0;
+  transition: 0.5s;
+}
+.stone-box:hover .text {
+  transform: translate(-50%, 100%);
+  opacity: 1;
+}
+.stone {
+  min-width: 5rem;
+  height: 97%;
+}
+.stone-highlighted {
+  width: 5rem;
+  height: 100%;
+}
+.stone-1-box .stone-highlighted {
+  opacity: 0;
+}
+.stone-1-box:hover .stone-highlighted {
+  opacity: 1;
+}
+.stone-2-box .stone-highlighted {
+  opacity: 0;
+}
+.stone-2-box:hover .stone-highlighted {
+  opacity: 1;
+}
+.stone-3-box .stone-highlighted {
+  opacity: 0;
+}
+.stone-3-box:hover .stone-highlighted {
+  opacity: 1;
+}
+.stone-4-box .stone-highlighted {
+  opacity: 0;
+}
+.stone-4-box:hover .stone-highlighted {
+  opacity: 1;
+}
+.stone-5-box .stone-highlighted {
+  opacity: 0;
+}
+.stone-5-box:hover .stone-highlighted {
+  opacity: 1;
+}
+.stone-6-box .stone-highlighted {
+  opacity: 0;
+}
+.stone-6-box:hover .stone-highlighted {
+  opacity: 1;
+}
