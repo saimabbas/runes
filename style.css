@@ -71,6 +71,7 @@
   width: 5rem;
   height: 100%;
 }
+
 .stone-1-box .stone-highlighted {
   opacity: 0;
 }
@@ -106,4 +107,41 @@
 }
 .stone-6-box:hover .stone-highlighted {
   opacity: 1;
+}
+
+.stone-1-box .stone {
+  opacity: 1;
+}
+.stone-1-box:hover .stone {
+  opacity: 0;
+}
+.stone-2-box .stone {
+  opacity: 1;
+}
+.stone-2-box:hover .stone {
+  opacity: 0;
+}
+.stone-3-box .stone {
+  opacity: 1;
+}
+.stone-3-box:hover .stone {
+  opacity: 0;
+}
+.stone-4-box .stone {
+  opacity: 1;
+}
+.stone-4-box:hover .stone {
+  opacity: 0;
+}
+.stone-5-box .stone {
+  opacity: 1;
+}
+.stone-5-box:hover .stone {
+  opacity: 0;
+}
+.stone-6-box .stone {
+  opacity: 1;
+}
+.stone-6-box:hover .stone {
+  opacity: 0;
 }
