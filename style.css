@@ -12,7 +12,6 @@
 .bg-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   object-position: top;
   position: absolute;
   top: 0;
@@ -26,7 +25,7 @@
   padding: 0 5rem;
   height: max-content;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
@@ -36,7 +35,7 @@
 }
 .stone-box {
   width: max-content;
-  height: 6.5rem;
+  height: 5.5rem;
   position: relative;
   background-color: red;
 }
@@ -71,77 +70,31 @@
   width: 5rem;
   height: 100%;
 }
-
-.stone-1-box .stone-highlighted {
-  opacity: 0;
-}
-.stone-1-box:hover .stone-highlighted {
-  opacity: 1;
-}
-.stone-2-box .stone-highlighted {
-  opacity: 0;
-}
-.stone-2-box:hover .stone-highlighted {
-  opacity: 1;
-}
-.stone-3-box .stone-highlighted {
-  opacity: 0;
-}
-.stone-3-box:hover .stone-highlighted {
-  opacity: 1;
-}
-.stone-4-box .stone-highlighted {
-  opacity: 0;
-}
-.stone-4-box:hover .stone-highlighted {
-  opacity: 1;
-}
-.stone-5-box .stone-highlighted {
-  opacity: 0;
-}
-.stone-5-box:hover .stone-highlighted {
-  opacity: 1;
-}
+.stone-1-box:hover .stone,
+.stone-2-box:hover .stone,
+.stone-3-box:hover .stone,
+.stone-4-box:hover .stone,
+.stone-5-box:hover .stone,
+.stone-6-box:hover .stone,
+.stone-1-box .stone-highlighted,
+.stone-2-box .stone-highlighted,
+.stone-3-box .stone-highlighted,
+.stone-4-box .stone-highlighted,
+.stone-5-box .stone-highlighted,
 .stone-6-box .stone-highlighted {
-  opacity: 0;
+  display: none;
 }
-.stone-6-box:hover .stone-highlighted {
-  opacity: 1;
-}
-
-.stone-1-box .stone {
-  opacity: 1;
-}
-.stone-1-box:hover .stone {
-  opacity: 0;
-}
-.stone-2-box .stone {
-  opacity: 1;
-}
-.stone-2-box:hover .stone {
-  opacity: 0;
-}
-.stone-3-box .stone {
-  opacity: 1;
-}
-.stone-3-box:hover .stone {
-  opacity: 0;
-}
-.stone-4-box .stone {
-  opacity: 1;
-}
-.stone-4-box:hover .stone {
-  opacity: 0;
-}
-.stone-5-box .stone {
-  opacity: 1;
-}
-.stone-5-box:hover .stone {
-  opacity: 0;
-}
+.stone-1-box:hover .stone-highlighted,
+.stone-2-box:hover .stone-highlighted,
+.stone-3-box:hover .stone-highlighted,
+.stone-4-box:hover .stone-highlighted,
+.stone-5-box:hover .stone-highlighted,
+.stone-6-box:hover .stone-highlighted,
+.stone-1-box .stone,
+.stone-2-box .stone,
+.stone-3-box .stone,
+.stone-4-box .stone,
+.stone-5-box .stone,
 .stone-6-box .stone {
-  opacity: 1;
-}
-.stone-6-box:hover .stone {
-  opacity: 0;
+  display: block;
 }
