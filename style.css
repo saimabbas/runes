@@ -22,7 +22,7 @@
 .stones-container {
   width: 100%;
   max-width: 90%;
-  padding: 0 5rem;
+  /* padding: 0 5rem; */
   height: max-content;
   position: absolute;
   top: 60%;
@@ -51,7 +51,7 @@
   transition: 0.15s;
 }
 .text {
-  width: 200px;
+  width: 12.5vw;
   height: max-content;
   position: absolute;
   bottom: 0;
@@ -99,4 +99,35 @@
 .stone-5-box .stone,
 .stone-6-box .stone {
   display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .bg-img {
+    object-fit: cover;
+  }
+  .stone-box {
+    width: 12.5vw;
+    height: 12.5vw;
+  }
+  .text {
+    width: 35vw;
+  }
+  .stone-1-box .text {
+    left: 0;
+    transform: translate(0%, 110%);
+  }
+  .stone-1-box:hover .text {
+    left: 0;
+    transform: translate(0%, 100%);
+  }
+  .stone-6-box .text {
+    left: unset;
+    right: 0;
+    transform: translate(-0%, 110%);
+  }
+  .stone-6-box:hover .text {
+    left: unset;
+    right: 0;
+    transform: translate(-0%, 100%);
+  }
 }
